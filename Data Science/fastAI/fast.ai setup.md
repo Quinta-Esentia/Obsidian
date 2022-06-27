@@ -7,6 +7,7 @@ Assuming using windows:
 - have windows 10 updated since (march?) 2020 for wsl2.
 
 ### Setup Linux terminal in windows
+*HINT!* Remeber your [[Terminal|terminal commands ;)]]
 1. In (windows/powershell) terminal, enter `wsl --install` or `wsl.exe --install`
 2. Make sure installation of linux kernel is complete (in our case, Ubuntu). Computer restart required. 
 3. UNIX user setup required. choose user and pw
