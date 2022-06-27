@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Utility Tips/Terminal.md",
+            "file": "Data Science/fastAI/fast.ai setup.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5b82cb07f44d68b9",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Utility Tips/Terminal.md",
+                "file": "Data Science/fastAI/fast.ai setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +89,9 @@
   },
   "active": "07b18559a05a30ed",
   "lastOpenFiles": [
+    "Data Science/fastAI/fast.ai setup.md",
     "Utility Tips/Terminal.md",
     "Utility Tips/Outlook.md",
-    "Data Science/fastAI/fast.ai setup.md",
     "Rio Tinto/To Do.md",
     "Data Science/Survival Analysis/Survival Analysis.md",
     "Learning Obsidian/My favourite band.md",

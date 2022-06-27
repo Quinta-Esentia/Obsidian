@@ -19,19 +19,34 @@ Troubleshooting internet connectivity issues:
 
  
 
-### Setup python
-OLD
-1. find linux installation file mamba from https://github.com/conda-forge/miniforge
-2. In downloads directory in terminal, use `wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh`
-3. run `bash Mambaforge-Linux-x86_64.sh` and follow prompts to install mamba, choosing to initialise conda.init
+## Setup python
 
-NEW
-1. go to fastai/fsatsetup and get url of raw view of "setup-conda.sh" 
+### Install mamba
+NEW METHOD  - old method redundant [^bignote]
+1. go to [fastai/fsatsetup](https://github.com/fastai/fastsetup) and get url of raw view of "setup-conda.sh" 
 2. In downloads directory in terminal, use `wget https://raw.githubusercontent.com/fastai/fastsetup/master/setup-conda.sh`
-3. run `bash `
+3. run `bash setup-conda.sh`
 
-5. after installation is finished, restart shell and confirm `which python` returns 
+4. after installation is finished, restart shell and confirm `which python` returns 
 ``` 
 /home/*USER*/mambaforge/bin/python or something similar 
 ```
 
+[^bignote]: 
+	OLD method (use NEW instead)
+	1. find linux installation file mamba from https://github.com/conda-forge/miniforge
+	2. In downloads directory in terminal, use `wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh`
+	3. run `bash Mambaforge-Linux-x86_64.sh` and follow prompts to install mamba, choosing to initialise conda.init
+
+### Install pytorch
+https://pytorch.org/get-started/locally/
+`conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
+
+### Install jupyter
+`mamba install jupyterlab`
+
+to stop no browser warning (as none is installed in Ubuntu)
+`alias jl="jupyter lab --no-browser"`
+
+## Install fast ai
+`mamba install -c fastchan fastbook sentencepiece`
