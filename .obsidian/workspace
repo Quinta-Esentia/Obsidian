@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "d29d4239a0216d64",
+    "type": "split",
+    "children": [
+      {
+        "id": "07b18559a05a30ed",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Utility Tips/Terminal.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f636e14694a81209",
+    "type": "split",
+    "children": [
+      {
+        "id": "81e5e53adeaf7153",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12d97b225e270c14",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "771d49eac1c2eb3b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "roadm",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5b82cb07f44d68b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "6612cdd7af8e4e05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6441e2280441d08c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Utility Tips/Terminal.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "07b18559a05a30ed",
+  "lastOpenFiles": [
+    "Utility Tips/Terminal.md",
+    "Utility Tips/Outlook.md",
+    "Data Science/fastAI/fast.ai setup.md",
+    "Rio Tinto/To Do.md",
+    "Data Science/Survival Analysis/Survival Analysis.md",
+    "Learning Obsidian/My favourite band.md",
+    "Learning Obsidian/Obsidian Tutorial.md"
+  ]
+}
