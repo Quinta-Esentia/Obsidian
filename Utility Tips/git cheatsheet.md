@@ -26,3 +26,9 @@ then press enter
 
 enter username
 paste git token for pw (it will not show any characters to hide pw) then press enter
+
+# Remove sensitive files & comit history
+WARNING! ONLY DO THIS ON REPOS YOU ARE FULL OWNER OF!!
+MAY BE CONCEQUENCES
+
+https://stackoverflow.com/questions/872565/remove-sensitive-files-and-their-commits-from-git-history
