@@ -64,5 +64,8 @@ confirm installation:
 to stop no browser warning (as none is installed in Ubuntu)
 `alias jl="jupyter lab --no-browser"`
 
-## Install fast ai
+### Install fast ai
 `mamba install -c fastchan fastbook sentencepiece`
+
+may need to install ipywidgets
+`mamba install ipywidgets`

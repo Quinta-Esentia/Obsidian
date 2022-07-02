@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Utility Tips/git cheatsheet.md",
+            "file": "Data Science/fastAI/fast.ai setup.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Utility Tips/git cheatsheet.md",
+                "file": "Data Science/fastAI/fast.ai setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,8 +87,8 @@
   },
   "active": "25639f59ed07dae1",
   "lastOpenFiles": [
-    "Utility Tips/git cheatsheet.md",
     "Data Science/fastAI/fast.ai setup.md",
+    "Utility Tips/git cheatsheet.md",
     "Learning Obsidian/Obsidian Tutorial.md",
     "Learning Obsidian/My favourite band.md",
     "Utility Tips.md",
