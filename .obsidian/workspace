@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "07b18559a05a30ed",
+        "id": "25639f59ed07dae1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "Utility Tips/git cheatsheet.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -85,15 +85,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "07b18559a05a30ed",
+  "active": "25639f59ed07dae1",
   "lastOpenFiles": [
     "Utility Tips/git cheatsheet.md",
     "Data Science/fastAI/fast.ai setup.md",
-    "Utility Tips/Terminal.md",
-    "Utility Tips/Outlook.md",
-    "Rio Tinto/To Do.md",
-    "Data Science/Survival Analysis/Survival Analysis.md",
+    "Learning Obsidian/Obsidian Tutorial.md",
     "Learning Obsidian/My favourite band.md",
-    "Learning Obsidian/Obsidian Tutorial.md"
+    "Utility Tips.md",
+    "README.md",
+    "Utility Tips/Outlook.md",
+    "Utility Tips/Terminal.md",
+    "Rio Tinto/To Do.md",
+    "Data Science/Survival Analysis/Survival Analysis.md"
   ]
 }

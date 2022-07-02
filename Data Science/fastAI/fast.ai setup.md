@@ -41,7 +41,22 @@ NEW METHOD  - old method redundant [^bignote]
 
 ### Install pytorch
 https://pytorch.org/get-started/locally/
-`conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
+
+!REMEMBER! replace `conda` with `mamba`
+
+GPU Example:
+`mamba install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
+
+CPU Example:
+`mamba install pytorch torchvision torchaudio cpuonly -c pytorch`
+
+confirm installation:
+1. run `ipython`
+2. run `import torch`
+3. run `torch.tensor(1)`
+4. confirm output without errors
+`
+
 
 ### Install jupyter
 `mamba install jupyterlab`

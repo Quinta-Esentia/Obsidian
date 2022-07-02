@@ -32,3 +32,12 @@ WARNING! ONLY DO THIS ON REPOS YOU ARE FULL OWNER OF!!
 MAY BE CONCEQUENCES
 
 https://stackoverflow.com/questions/872565/remove-sensitive-files-and-their-commits-from-git-history
+
+# Changing directories
+## Chang Home directory
+https://www.shellhacks.com/git-bash-change-home-directory/
+
+## Change default directory
+https://www.shellhacks.com/git-bash-change-default-directory/
+
+old directory: `%HOMEDRIVE%%HOMEPATH%`"
