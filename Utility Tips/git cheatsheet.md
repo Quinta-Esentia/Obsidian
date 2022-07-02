@@ -1,4 +1,7 @@
 # GIT cheat sheet:
+I like to use git bash terminal in windows - it's like a linux shell with git commands added, so the usual linux terminal commands work.
+
+You can open a terminal like this in most cloud environments or a jupyter notebook
 
 ## Open Terminal:
 	In jupyter lab, go: File -> New -> Terminal
