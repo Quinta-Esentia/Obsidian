@@ -38,6 +38,21 @@ NEW METHOD  - old method redundant [^bignote]
 	1. find linux installation file mamba from https://github.com/conda-forge/miniforge
 	2. In downloads directory in terminal, use `wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh`
 	3. run `bash Mambaforge-Linux-x86_64.sh` and follow prompts to install mamba, choosing to initialise conda.init
+	
+### Reinstalling mamba
+[Link to fast.ai vid](https://www.youtube.com/watch?v=56sIyFjihEc&list=PLfYUBJiXbdtSLBPJ1GMx-sQWf6iNhb8mM&index=1&t=39m50s)
+If you mess up your python environment and want to start again, just 
+1. remove your entire mambaforge directory with:
+`rm -rf mambaforge`
+2. You will also need to edit your .barshrc script that automatically runs everytime you start your termial. Use `vim .bashrc` to edit this file in [[Terminal#Vim commands|vim]],  and move to the bottom to remove everything between the `# >>> conda initialize >>>` comments.
+3. Restart terminal
+4. you can now cd to downloads and run `bash setup-conda.sh`
+
+### Install jupyter
+`mamba install jupyterlab`
+
+to stop no browser warning (as none is installed in Ubuntu)
+`alias jl="jupyter lab --no-browser"`
 
 ### Install pytorch
 https://pytorch.org/get-started/locally/
@@ -47,6 +62,8 @@ https://pytorch.org/get-started/locally/
 GPU Example:
 `mamba install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
 
+`conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge`
+
 CPU Example:
 `mamba install pytorch torchvision torchaudio cpuonly -c pytorch`
 
@@ -55,17 +72,22 @@ confirm installation:
 2. run `import torch`
 3. run `torch.tensor(1)`
 4. confirm output without errors
-`
+
+check if your GPU driver and CUDA is enabled and accessible by PyTorch:
+`torch.cuda.is_available()`
 
 
-### Install jupyter
-`mamba install jupyterlab`
-
-to stop no browser warning (as none is installed in Ubuntu)
-`alias jl="jupyter lab --no-browser"`
 
 ### Install fast ai
 `mamba install -c fastchan fastbook sentencepiece`
 
 may need to install ipywidgets
 `mamba install ipywidgets`
+
+## Troubleshooting
+
+### Enabling GPU
+[Enabling GPU acceleration on Ubuntu on WSL2 with the NVIDIA CUDA Platform](https://ubuntu.com/tutorials/enabling-gpu-acceleration-on-ubuntu-on-wsl2-with-the-nvidia-cuda-platform)
+
+- Install the appropriate Windows vGPU driver for WSL
+- DO NOT NEED to install NVIDIA CUDA on Ubuntu (mamba installing pytorch will do that for us)

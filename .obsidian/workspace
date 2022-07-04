@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Data Science/fastAI/fast.ai setup.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "roadm",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,18 +83,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "25639f59ed07dae1",
   "lastOpenFiles": [
     "Data Science/fastAI/fast.ai setup.md",
+    "Utility Tips/Terminal.md",
     "Utility Tips/git cheatsheet.md",
     "Learning Obsidian/Obsidian Tutorial.md",
     "Learning Obsidian/My favourite band.md",
     "Utility Tips.md",
     "README.md",
     "Utility Tips/Outlook.md",
-    "Utility Tips/Terminal.md",
     "Rio Tinto/To Do.md",
     "Data Science/Survival Analysis/Survival Analysis.md"
   ]

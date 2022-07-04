@@ -16,7 +16,7 @@ You can open a terminal like this in most cloud environments or a jupyter notebo
 
 when asked to explain git message: 
 git uses an editor your default editor.
-To solve this, use these vim commands:
+To solve this, use these #vim commands:
 
 		- press "i" (i for insert)
 		- write your merge message
