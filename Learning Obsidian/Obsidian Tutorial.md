@@ -33,6 +33,9 @@ content for cell 1 | [[My favourite band#I also like Nujabes\|Nujabes is cool]] 
 Use colon | to justify tables
 :----------|---------:
 cell 1 | cell 2
+cell 3 | cell 4
+
+
 
 
 

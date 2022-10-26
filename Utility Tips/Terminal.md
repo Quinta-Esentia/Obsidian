@@ -1,4 +1,4 @@
-
+Inspired by the [fast.ai](https://course19.fast.ai/terminal_tutorial.html) course's  walkthrough [videos](https://www.youtube.com/playlist?list=PLfYUBJiXbdtSLBPJ1GMx-sQWf6iNhb8mM) on Jeremy Howard's YouTube channel. 
 
 ## Change permissions
 https://www.youtube.com/watch?v=56sIyFjihEc&list=PLfYUBJiXbdtSLBPJ1GMx-sQWf6iNhb8mM&index=1&t=49m32s

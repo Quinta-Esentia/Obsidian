@@ -9,7 +9,23 @@ You can open a terminal like this in most cloud environments or a jupyter notebo
 ## Basic Terminal commands:
 	ls = list directory (dir in CMD)
 	cd = change directory
-	
+	git remote -v = see URL of connected reposity (for fetch and push calls)
+
+### Basic git commands:
+Command | result
+:----------|---------:
+`git status` | show modified files in working directory, staged for your next commit
+`git pull` | fetch and merge any commits from the tracking remote branch
+`git fetch` |  that tells the local repository that there are changes without bringing them in
+`git add -all` | stages **all changes**
+`git add .` | stages new files and modifications, **without deletions**
+`git add -u`  | stages modifications and deletions, **without new files**
+`git commit -m “{descriptive message}”`| commit your staged content as a new commit snapshot
+`git push` | 
+
+
+
+
 ### REVERT SINGLE FILE
 	git checkout <COMMIT #> <file path/name>
 	git commit

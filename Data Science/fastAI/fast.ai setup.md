@@ -29,9 +29,7 @@ NEW METHOD  - old method redundant [^bignote]
 3. run `bash setup-conda.sh`
 
 4. after installation is finished, restart shell and confirm `which python` returns 
-``` 
-/home/*USER*/mambaforge/bin/python or something similar 
-```
+`/home/*USER*/mambaforge/bin/python` or something similar (i.e. NOT the system version of python that is installed with the OS)
 
 [^bignote]: 
 	OLD method (use NEW instead)
@@ -57,14 +55,15 @@ to stop no browser warning (as none is installed in Ubuntu)
 ### Install pytorch
 https://pytorch.org/get-started/locally/
 
-!REMEMBER! replace `conda` with `mamba`
+==REMEMBER== to replace `conda` with `mamba` 
 
-GPU Example:
+- GPU Example:
 `mamba install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
 
-`conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge`
+- ==NOT confirmed to work:== `conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge`
+seems this version (with cudatoolkit=11.6) may not be compatible with fastbook install method for whicher reason not yet investigated. 
 
-CPU Example:
+- CPU Example:
 `mamba install pytorch torchvision torchaudio cpuonly -c pytorch`
 
 confirm installation:
@@ -79,7 +78,12 @@ check if your GPU driver and CUDA is enabled and accessible by PyTorch:
 
 
 ### Install fast ai
+
 `mamba install -c fastchan fastbook sentencepiece`
+
+or 
+1. `mamba install -c fastchan fastai`
+2. follow same format to install other required pcks. (Run first cells of fast.ai notebook and see what modules are missing)
 
 may need to install ipywidgets
 `mamba install ipywidgets`
