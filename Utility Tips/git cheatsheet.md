@@ -6,14 +6,16 @@ You can open a terminal like this in most cloud environments or a jupyter notebo
 ## Open Terminal:
 	In jupyter lab, go: File -> New -> Terminal
 	
-## Basic Terminal commands:
+## Basic [[Terminal]] commands :
 	ls = list directory (dir in CMD)
+	ls -a = list directory INCLUDING hidden files!
 	cd = change directory
-	git remote -v = see URL of connected reposity (for fetch and push calls)
+	
 
 ### Basic git commands:
 Command | result
 :----------|---------:
+`git remote -v` | see URL of connected reposity (for fetch and push calls)
 `git status` | show modified files in working directory, staged for your next commit
 `git pull` | fetch and merge any commits from the tracking remote branch
 `git fetch` |  that tells the local repository that there are changes without bringing them in
@@ -24,6 +26,11 @@ Command | result
 `git push` | 
 
 
+### Author Identity
+To set your account's default identity, run the following. Omit `--global` to set the identity only in this repository.
+
+`git config --global user.email "you@example.com"` 
+`git config --global user.name "Your Name"`  
 
 
 ### REVERT SINGLE FILE
