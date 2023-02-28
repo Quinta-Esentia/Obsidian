@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Utility Tips/git cheatsheet.md",
+                "file": "HRDS Projects/APR/Linear Regression Ideas.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mo",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -106,8 +106,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -127,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Utility Tips/git cheatsheet.md",
+                "file": "HRDS Projects/APR/Linear Regression Ideas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,12 +153,12 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "e2058d35326ecf84",
+  "active": "12d97b225e270c14",
   "lastOpenFiles": [
-    "HRDS Projects/APR/Ideas.md",
+    "HRDS Projects/APR/Linear Regression Ideas.md",
+    "Utility Tips/git cheatsheet.md",
     "Data Science/R/SparklyR.md",
     "Data Science/Survival Analysis/Survival Analysis.md",
-    "Utility Tips/git cheatsheet.md",
     "Learning Obsidian/Obsidian Tutorial.md",
     "HRDS Projects/Project Mind Map.canvas",
     "HRDS Projects/Gender Diversity Turnover Analysis.md",

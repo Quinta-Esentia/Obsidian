@@ -759,8 +759,8 @@ In terms of interpretation of model coefficients, scaling or centering variables
 When variables are centered, the intercept in the model represents the expected value of the response variable when all predictor variables are equal to zero (or their mean values). This can make it easier to interpret the intercept and compare the effects of different predictor variables. Additionally, centering variables can help mitigate issues with multicollinearity, as it can help reduce correlations between variables and improve the stability of the regression algorithm.
 
 Overall, whether or not to scale or center variables in a linear regression model depends on the specific context and goals of the analysis. It is important to carefully consider the pros and cons of each approach and choose a method that is appropriate for the particular data and research question at hand.
-# Question 32
-
+# Question 32: Percentages and Rates
+#model-Interpretability 
 ## Prompt
 if we have a turnover variable in our data in a decimal percentage format (values between 0 and 1), what is the best way to transform this data for linear regression? which method enables easiest interpretation? For example, if we multiple the values by 100 to scale them between 0 and 100, then the model coefficient for turnover will represent the increase in Y with a 1% increase in turnover.
 ## Reply
@@ -769,20 +769,20 @@ If the turnover variable is in decimal percentage format (values between 0 and 1
 Another option is to leave the turnover variable in its current format and interpret the model coefficient as the increase in Y with a one-unit increase in turnover. This approach allows for more intuitive interpretation of the model coefficient, but it may be more difficult to compare the effects of turnover with other variables that are on different scales.
 
 Ultimately, the choice of how to transform the turnover variable will depend on the specific context and the preferences of stakeholders. It may be helpful to consult with domain experts and other stakeholders to determine the most appropriate approach.
-# Question 33
-
+# Question 33: Percentages and Rates cont
+#model-Interpretability 
 ## Prompt
 in your previous example you are wrong, the coefficient would have to be -10 (negative ten) to result in a 10 unit decrease in productivity
 ## Reply
 You are correct, I apologize for my mistake. If the coefficient for turnover is -10 and turnover is on a 0 to 1 decimal percentage scale, then a one unit increase in turnover (or a 100% increase in turnover) would result in a 10 unit decrease in productivity. Thank you for bringing this to my attention.
-# Question 34
-
+# Question 34: Percentages and Rates
+#model-Interpretability 
 ## Prompt
 so how would you interpret the impact on the y variable when the model coefficient is 10
 ## Reply
 If the turnover variable is in decimal percentage format on a 0 to 1 scale and the model coefficient for turnover is 10, then a unit increase in turnover (i.e., an increase of 0.01) would result in a predicted increase in the dependent variable (Y) of 0.1 units, all other things being equal. So, for example, if the predicted value of Y for an observation with a turnover of 0.3 is 50, then the predicted value of Y for an observation with a turnover of 0.31 would be 50.1.
-# Question 35
-
+# Question 35: Other considerations
+#outliers #multicollinearity #Normality #residuals #Homoscedasticity #model-selection #model-Interpretability #interpretation 
 ## Prompt
 what other things need to considered for this multiple linear regression analysis that haven't been mentioned?
 ## Reply
@@ -799,8 +799,8 @@ There are several other things that should be considered when conducting a multi
 5.  Model selection: There are many different ways to select the "best" model for a given set of data, including stepwise regression, regularization techniques such as ridge regression and lasso regression, and model averaging techniques. It is important to choose the appropriate method for the data and the research question at hand.
     
 6.  Interpretation of coefficients: It is important to remember that the coefficients in a regression model represent the effect of a one-unit increase in the independent variable, holding all other variables constant. This means that the interpretation of the coefficients depends on the scale of the independent variables and any transformations that have been applied to them. It is also important to remember that correlation does not imply causation, and that the results of a regression analysis should be interpreted in the context of the research question and the data.
-# Question 36
-
+# Question 36: Remove outliers
+#outliers #remove-outliers #car 
 ## Prompt
 how to identify and remove outliers from a multiple linear regression model? show the necessary R code.
 ## Reply
@@ -818,12 +818,12 @@ outliers <- outlierTest(model)
 # Remove outliers using the subset() function
 mydata <- subset(mydata, !row.names(mydata) %in% row.names(outliers$studentized))
 ```
-In the code above, we first fit a multiple linear regression model called `model` to our data using the `lm()` function. We then use the `outlierTest()` function from the `car` package to identify any outliers in the data. This function calculates several measures of outlier status, including the Bonferroni p-value, which adjusts for multiple comparisons. The function returns a list of studentized residuals that are above a certain threshold based on the Bonferroni p-value.
+In the code above, we first fit a multiple linear regression model called `model` to our data using the `lm()` function. We then use the `outlierTest()` function from the `car` package to identify any outliers in the data. This function calculates several measures of outlier status, including the Bonferroni p-value, which adjusts for multiple c omparisons. The function returns a list of studentized residuals that are above a certain threshold based on the Bonferroni p-value.
 
 We then use the `subset()` function to remove any rows from our data frame (`mydata`) that correspond to the identified outliers. The `!row.names(mydata) %in% row.names(outliers$studentized)` code selects all rows in `mydata` that are not in the list of identified outliers.
 
 It's important to note that outlier removal should be done with caution, as it can greatly affect the results of the analysis. It's also important to investigate the reasons behind any identified outliers and determine if they are truly data errors or valid data points before removing them.
-# Question 37
+# Question 37: Put it all together 1
 
 ## Prompt
 can you put all of this together in R code? Create the best linear multiple regression model for mining productivity metrics using HR metrics and others discussed
@@ -867,7 +867,7 @@ mining_data$HR_metric_1 <- scale(mining_data$HR_metric_1, center = TRUE, scale =
 mining_data$HR_metric_2 <- scale(mining_data$HR_metric_2
 ```
 
-# Question 38
+# Question 38: Put it all together 2
 
 ## Prompt
 go on
@@ -916,8 +916,8 @@ bptest(mlr_model_final, studentize = FALSE)
 vif(mlr_model_final)
 ```
 This code first loads the necessary libraries and reads in the data. It then cleans and prepares the data, scaling the turnover, absenteeism, and age variables. It then fits a linear regression model with turnover, absenteeism, age, gender, and education level as independent variables and production metric as the dependent variable. Cook's distance is used to identify outliers, which are then removed from the data. The final model is then fitted and checked for model assumptions, including normality of residuals and multicollinearity.
-# Question 39
-
+# Question 39: No scaling, use regsubsets
+#regsubsets 
 ## Prompt
 go on, Give R code for our problem without scaling and using regsubsets() from the leaps package.
 ## Reply
@@ -939,8 +939,8 @@ final_model <- lm(Productivity ~ ., data = mining_df[, c("Productivity", selecte
 summary(final_model)
 ```
 This code will fit a linear regression model using all available predictor variables in `mining_df` and select the best model based on the adjusted R-squared value. The selected model will then be fit using the `lm()` function and the summary of the final model will be printed.
-# Question 40
-
+# Question 40: Put it all together 3
+#regsubsets 
 ## Prompt
 Go on, giving a more complete solution
 ## Reply
@@ -968,7 +968,7 @@ summary(final_model)
 This code will load the necessary packages, read in the data, convert the turnover variable to percentages, create an initial model with all variables, and use the `step()` function to perform stepwise variable selection and identify significant variables. Finally, it will print the summary of the final model.
 
 Note that in this example, we did not scale or center the variables, and we used the `lm()` function instead of `regsubsets()`. The `step()` function performs variable selection by adding or removing variables from the initial model based on the AIC (Akaike Information Criterion) value, which is a measure of the model's goodness of fit that penalizes for the number of variables included.
-# Question 41
+# Question 41: Detailed solution
 
 ## Prompt
 go on, give a more detailed solution using advanced techniques. the only variable that needs scaling is turnover to a 0 to 100 scale. no centring required.
@@ -1035,7 +1035,7 @@ outliers <- outlierTest(model)$"Bonf(p)"
 train <- train[-outliers, ]
 ```
 And that's a more detailed solution using advanced techniques for our multiple linear regression problem.
-# Question 42: Complete Solution
+# Question 42: Advanced Solution 1
 #regsubsets #leaps 
 ## Prompt
 great! give another solution with less verbose and more advanced code
@@ -1074,7 +1074,7 @@ ggplot(data = augment(model)) +
 This code uses the `regsubsets()` function from the `leaps` package to fit all possible regressions with up to 5 predictors, and then selects the best model based on the lowest RSS. It then fits a linear regression model using the selected predictors and outputs the model summary. Finally, it creates a plot of the residuals vs the fitted values to check for any patterns or outliers.
 
 Note that we first convert `turnover` to a 0-100 scale before fitting the models, as discussed earlier. We also use the `%>%` operator from the `tidyverse` package to chain multiple operations together, making the code more concise and easier to read.
-# Question 43: Complete Solution (advanced)
+# Question 43: Advanced solution 2
 #glmnet #lambda #regularization #caret #broom
 ## Prompt
 go on, with more advanced techniques
@@ -1125,39 +1125,9 @@ This code is more advanced than the previous solutions because it uses data pre-
 what kind of regularisation parameter is lambda here? what is glmnet doing?
 ## Reply
 In the context of the glmnet function, lambda is the regularization parameter controlling the strength of the penalty term in the elastic net regularization. The glmnet function fits a generalized linear model via penalized maximum likelihood estimation using either ridge (L2) regularization, lasso (L1) regularization, or a combination of both (elastic net regularization). The function performs regularization by shrinking the coefficient estimates towards zero, which can help to prevent overfitting and improve the generalization performance of the model.
-# Question 45
-
+# Question 45: Regularization for feature selection
+#regularization #feature-selection #variable-selection 
 ## Prompt
 does this dictate which predictors are included and which are excluded?
 ## Reply
 Yes, the choice of lambda in glmnet regularizes the coefficients of the predictors, shrinking them towards zero. This can lead to some coefficients becoming exactly zero, effectively excluding those predictors from the model. The amount of regularization is controlled by the value of lambda: larger values of lambda result in more aggressive shrinking and therefore fewer predictors retained in the model. The glmnet algorithm uses cross-validation to determine the optimal value of lambda that balances model fit and complexity.
-# Question 46
-
-## Prompt
-
-## Reply
-
-# Question 47
-
-## Prompt
-
-## Reply
-
-# Question 48
-
-## Prompt
-
-## Reply
-
-# Question 49
-
-## Prompt
-
-## Reply
-
-# Question 50
-
-## Prompt
-
-## Reply
-
