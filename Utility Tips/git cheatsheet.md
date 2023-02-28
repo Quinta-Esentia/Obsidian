@@ -1,7 +1,12 @@
+
 # GIT cheat sheet:
 I like to use git bash terminal in windows - it's like a linux shell with git commands added, so the usual linux terminal commands work.
 
 You can open a terminal like this in most cloud environments or a jupyter notebook
+
+### PDF Cheatsheets
+1. [SWTM-2088_Atlassian-Git-Cheatsheet.pdf](file:///C:%5CUsers%5CDexter.Camison%5COneDrive%20-%20Rio%20Tinto%5Cgit%5CSWTM-2088_Atlassian-Git-Cheatsheet.pdf)
+2. [git-cheat-sheet-education.pdf](file:///C:%5CUsers%5CDexter.Camison%5COneDrive%20-%20Rio%20Tinto%5Cgit%5Cgit-cheat-sheet-education.pdf)
 
 ## Open Terminal:
 	In jupyter lab, go: File -> New -> Terminal
@@ -13,6 +18,7 @@ You can open a terminal like this in most cloud environments or a jupyter notebo
 	
 
 ### Basic git commands:
+
 Command | result
 :----------|---------:
 `git remote -v` | see URL of connected reposity (for fetch and push calls)
@@ -25,12 +31,26 @@ Command | result
 `git commit -m “{descriptive message}”`| commit your staged content as a new commit snapshot
 `git push` | 
 
+### Basic Update Workflow:
+- Push local updates to remote repo:
+`git status`
+`git add .`
+`git commit -m "update new files and modifications to repo"`
+`git push`
+`git status`
+
+- Pull updates from remote repo to local:
+`git status`
+`git pull`
+`git status` 
 
 ### Author Identity
 To set your account's default identity, run the following. Omit `--global` to set the identity only in this repository.
 
 `git config --global user.email "you@example.com"` 
 `git config --global user.name "Your Name"`  
+
+### SSO (needs updating)
 
 
 ### REVERT SINGLE FILE

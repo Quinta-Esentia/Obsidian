@@ -8,7 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "72cd367b7c2cb1bb",
+            "id": "df37cae94ca4f8ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Science/Sagemaker and Jupyter Lab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "329bc1933c765532",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Science/Databricks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6417f11f3d9202d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,43 +44,19 @@
             }
           },
           {
-            "id": "df37cae94ca4f8ed",
+            "id": "e2058d35326ecf84",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HRDS Projects/To Do.md",
+                "file": "Utility Tips/git cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0a9cac15290ef505",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HRDS Projects/ERT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "31d56f49df0281f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HRDS Projects/APR Insights.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eabe22613a4684b5",
+            "id": "064418bba2b850d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,16 +97,17 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mo",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -153,17 +154,24 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "eabe22613a4684b5",
+  "active": "e2058d35326ecf84",
   "lastOpenFiles": [
-    "HRDS Projects/To Do.md",
-    "HRDS Projects/Project Mind Map.canvas",
-    "README.md",
-    "HRDS Projects/Gender Diversity Turnover Analysis.md",
-    "HRDS Projects/APR Insights.md",
-    "HRDS Projects/ERT.md",
+    "HRDS Projects/APR/Ideas.md",
     "Data Science/R/SparklyR.md",
-    "Utility Tips/Sagemaker and Jupyter Lab.md",
-    "Utility Tips/Outlook.md",
-    "Utility Tips/Terminal.md"
+    "Data Science/Survival Analysis/Survival Analysis.md",
+    "Utility Tips/git cheatsheet.md",
+    "Learning Obsidian/Obsidian Tutorial.md",
+    "HRDS Projects/Project Mind Map.canvas",
+    "HRDS Projects/Gender Diversity Turnover Analysis.md",
+    "Data Science/fastAI/fast.ai setup.md",
+    "Data Science/Sagemaker and Jupyter Lab.md",
+    "HRDS Projects/APR/Population Split.md",
+    "HRDS Projects/APR/APR Insights.md",
+    "Entity Map.png",
+    "HRDS Projects/APR",
+    "Data Science/Databricks.md",
+    "HRDS Projects/To Do.md",
+    "HRDS Projects/ERT/ERT.md",
+    "Utility Tips/Outlook.md"
   ]
 }

@@ -5,18 +5,33 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#riotinto",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"Data Science\"",
+      "color": {
+        "a": 1,
+        "rgb": 34075
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": -0.5,
   "nodeSizeMultiplier": 2.18564102564103,
   "lineSizeMultiplier": 4.19589743589744,
   "collapse-forces": false,
-  "centerStrength": 0.856410256410256,
-  "repelStrength": 20,
+  "centerStrength": 0.708333333333333,
+  "repelStrength": 19.5,
   "linkStrength": 1,
-  "linkDistance": 259,
-  "scale": 1.0000000000000013,
+  "linkDistance": 183,
+  "scale": 0.6208539379023998,
   "close": false
 }
