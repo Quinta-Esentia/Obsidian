@@ -1,3 +1,6 @@
+Projects:
+1. [[Attrition Survival Analysis]]
+
 ## To look at:
 
 ### CoxPHFitter: 

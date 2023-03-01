@@ -47,6 +47,46 @@
             "id": "e2058d35326ecf84",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "46358f3928bdea1e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "a665ea7bb5a616f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Science/Data Science.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2fad4eb3be246b1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HRDS Projects/Gender Diversity Turnover Analysis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "684a241987ebd2eb",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "HRDS Projects/APR/Linear Regression Ideas.md",
@@ -68,7 +108,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -136,13 +176,23 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "009ef65261f6b020",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "HRDS Projects/APR/Linear Regression Ideas.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -153,24 +203,32 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "12d97b225e270c14",
+  "active": "684a241987ebd2eb",
   "lastOpenFiles": [
-    "HRDS Projects/APR/Linear Regression Ideas.md",
-    "Utility Tips/git cheatsheet.md",
-    "Data Science/R/SparklyR.md",
-    "Data Science/Survival Analysis/Survival Analysis.md",
-    "Learning Obsidian/Obsidian Tutorial.md",
-    "HRDS Projects/Project Mind Map.canvas",
-    "HRDS Projects/Gender Diversity Turnover Analysis.md",
-    "Data Science/fastAI/fast.ai setup.md",
+    "Utility Tips/Learning Obsidian/Obsidian Tutorial.md",
     "Data Science/Sagemaker and Jupyter Lab.md",
+    "Data Science/Data Science.md",
+    "Data Science/Databricks.md",
+    "Utility Tips/Learning Obsidian/Not-work-stuff.md",
+    "HRDS Projects/To Do.md",
+    "Data Science/Survival Analysis/Survival Analysis.md",
+    "HRDS Projects/Attrition Survival Analysis.md",
+    "HRDS Projects/Project List.md",
+    "HRDS Projects/Gender Diversity Turnover Analysis.md",
+    "Utility Tips/Learn.md",
+    "Untitled.canvas",
+    "Data Science/R/SparklyR.md",
+    "Data Science/Python/pySpark/pySpark.md",
+    "Utility Tips/Utility Tips.md",
+    "Utility Tips/Outlook.md",
+    "HRDS Projects/Project Mind Map.canvas",
     "HRDS Projects/APR/Population Split.md",
     "HRDS Projects/APR/APR Insights.md",
+    "HRDS Projects/APR/Linear Regression Ideas.md",
+    "Utility Tips/git cheatsheet.md",
+    "Data Science/fastAI/fast.ai setup.md",
     "Entity Map.png",
     "HRDS Projects/APR",
-    "Data Science/Databricks.md",
-    "HRDS Projects/To Do.md",
-    "HRDS Projects/ERT/ERT.md",
-    "Utility Tips/Outlook.md"
+    "HRDS Projects/ERT/ERT.md"
   ]
 }

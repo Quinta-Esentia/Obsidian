@@ -30,7 +30,7 @@ A sensitivity analysis is used to examine how the results of a regression model 
 
 In R, you can conduct a sensitivity analysis by running your regression model with different combinations of variables and comparing the resulting model statistics. Here is an example code snippet that demonstrates how you could conduct a sensitivity analysis for your model by removing "year" from the model and comparing the results:
 
-```
+```R
 # Load data and run initial regression model
 data <- read.csv("mining_data.csv")
 model <- lm(productivity ~ HR_data + product_group + year, data = data)
@@ -55,7 +55,7 @@ Yes, it is possible to do a time series regression that includes multiple HR met
 
 In R, there are several packages that you can use to perform time series regression, such as the "forecast" package or the "tsDyn" package. Here's an example of how you can perform a time series regression using the "forecast" package:
 
-```
+```R
 # Load data and convert to time series
 data <- read.csv("mining_data.csv")
 ts_data <- ts(data$mining_productivity, start = c(2016, 1), frequency = 12)
@@ -146,6 +146,7 @@ When there are many possible combinations of variables, it can be computationall
     
 
 It is important to note that different variable selection methods and model selection criteria may lead to different results. It is generally recommended to use multiple methods and criteria to ensure robustness of the results.
+
 # Question 8: Variable selection cont.
 #caret #variable-selection #stepwise-selection #test-training-split #cross-validation #mean-squared-error #MSE
 
@@ -153,7 +154,7 @@ It is important to note that different variable selection methods and model sele
 show R code for the process described above, using stepwise (or best subset) variable selection, using cross validation. choose the appropriate model selection criteria
 ## Reply
 Here is some example R code that demonstrates how to perform stepwise variable selection using cross-validation:
-```
+```R
 # Load libraries
 library(caret)
 
@@ -189,13 +190,14 @@ mse
 In this example, we are using the `caret` package to perform stepwise variable selection using the `leapSeq` method, which performs stepwise selection using a sequence of models with increasing number of variables. We are also using 10-fold cross-validation to evaluate model performance.
 
 The appropriate model selection criterion depends on the specific problem and goals. In this example, we are using mean squared error (MSE) to evaluate model performance on the testing set. However, other criteria such as adjusted R-squared, AIC, or BIC could also be used depending on the goals of the analysis.
+
 # Question 9: Variable selection cont.
 #regsubsets #variable-selection #exhaustive
 ## Prompt
 do the same but using R's base lm() function, and R-squared criteria.
 ## Reply
 Here is some example R code that demonstrates how to perform best subset variable selection using the `lm()` function and R-squared criteria:
-```
+```R
 # Load data
 data <- read.csv("mining_data.csv")
 
@@ -232,7 +234,7 @@ Note that the `regsubsets()` function is computationally intensive and may take 
 the above did not include a test train split or cross validation (unless that is part of the regsubsets() function). can you please include those also.
 ## Reply
 Yes, you are correct that the previous example did not include a train-test split or cross-validation. Here is an updated example that includes both:
-```
+```R
 # Load data
 data <- read.csv("mining_data.csv")
 
@@ -354,7 +356,7 @@ which interaction terms might I consider for this model? can you write R code si
 Interaction terms can be useful in capturing non-additive effects of predictor variables on the dependent variable. In the context of this multiple linear regression model, potential interaction terms could be between two or more HR metrics or between an HR metric and the product group variable.
 
 Here is an example of how to use the `regsubsets()` function in R to determine the best model with interaction terms, without cross-validation:
-```
+```R
 # Load required package
 library(leaps)
 
@@ -393,7 +395,7 @@ In this example, we first generate all possible interaction terms between the HR
 do the same example but using the data frame named DF, which includes the following columns of interest as interaction terms: hr_potential_interaxtions <- c("HR_metric_1", "HR_metric_2", "HR_metric_3", "HR_metric_4", "HR_metric_5", "HR_metric_6") automate the generation of all possible interaction terms
 ## Reply
 Sure! Here's how you can generate all possible interaction terms and use `regsubsets` to select the best model:
-```
+```R
 # create interaction terms for HR metrics
 hr_interactions <- combn(hr_potential_interactions, 2, simplify = FALSE)
 names(hr_interactions) <- sapply(hr_interactions, paste, collapse = "_x_")
@@ -428,7 +430,7 @@ To assess the assumptions of the multiple linear regression model, we can examin
 4.  Homoscedasticity: The variance of the residuals is constant across all levels of the independent variables.
 
 We can use several diagnostic plots to check these assumptions. Here's how you can create these plots in R:
-```
+```R
 # Fit the full model
 model <- lm(Y ~ ., data = DF_interactions)
 
@@ -465,7 +467,7 @@ The normal QQ plot is used to check the normality assumption. We expect the resi
 Finally, the last plot is a scatter plot of residuals vs fitted values, with the absolute value of the residuals on the y-axis. We expect the residuals to be randomly scattered around a horizontal line, with constant variance across all levels of the independent variables. A clear pattern, such as a funnel shape, may indicate heteroscedasticity.
 
 You can also use statistical tests to assess the assumptions of the model. For example, the Breusch-Pagan test can be used to test for homoscedasticity, and the Shapiro-Wilk test can be used to test for normality. Here's how you can perform these tests in R:
-```
+```R
 # Test for homoscedasticity
 library(lmtest)
 bptest(model)
@@ -509,7 +511,7 @@ what R code can I use to assess the linearity assumption? how strict is this ass
 To assess the linearity assumption in multiple linear regression, one can use scatterplots to visualize the relationship between each independent variable and the dependent variable. If the relationship appears to be linear, then the linearity assumption is likely to be met. If there is evidence of non-linearity, one can try transforming one or both variables or consider adding polynomial terms.
 
 In R, one can use the `plot()` function to create scatterplots of each independent variable against the dependent variable. For example:
-```
+```R
 # Plot scatterplots of each independent variable against the dependent variable
 par(mfrow=c(2,3)) # Set up 2x3 grid of plots
 plot(df$HR_metric_1, df$Productivity)
@@ -545,7 +547,7 @@ generate R code for dealing with categorical variables using lm() for multiple l
 To include categorical variables in a multiple linear regression model using the `lm()` function in R, we need to convert them to dummy variables. We can do this using the `factor()` function.
 
 Here's an example code for creating a multiple linear regression model using `lm()` function, including both continuous and categorical variables:
-```
+```R
 # Assume "df" is the data frame containing all variables
 # "product_group" and "job_title" are the categorical variables
 
@@ -563,7 +565,7 @@ summary(model)
 In the code above, we first converted the categorical variables `product_group` and `job_title` to factors using the `factor()` function. We then included them along with the continuous variables `HR_metric_1`, `HR_metric_2`, and `HR_metric_3` in the `lm()` function call.
 
 To change the reference level of a categorical variable, we can use the `relevel()` function. Here's an example code for changing the reference level of the `product_group` variable to "copper":
-```
+```R
 # Change reference level of product_group to "copper"
 df$product_group <- relevel(df$product_group, ref = "copper")
 
@@ -588,7 +590,7 @@ However, if we are interested in modeling the effects of all levels of the categ
 To apply effect coding in R, we can use the `contr.sum` function to create a matrix of contrasts, which we can then pass to the `contrasts()` function when specifying the categorical variable in the linear model.
 
 Here is an example using the `mtcars` dataset to illustrate effect coding in R:
-```
+```R
 # load the dataset
 data(mtcars)
 
@@ -638,7 +640,7 @@ The choice between using contrasts and not using an intercept term depends on th
 show the R code for the complete model using no intercept term for product group, including the relevant interaction terms and other independent variables.
 ## Reply
 Here's an example of the R code for the complete model using no intercept term for product group, including the relevant interaction terms and other independent variables:
-```
+```R
 # Set up the formula for the model
 formula <- productivity ~ 0 + product_group:HR_metric_1 + product_group:HR_metric_2 + product_group:HR_metric_3 + 
   product_group:HR_metric_4 + product_group:HR_metric_5 + product_group:HR_metric_6 + HR_metric_7 + HR_metric_8 + HR_metric_9
@@ -684,24 +686,24 @@ what data cleaning and preparation is needed for this linear regression model? U
 There are several data cleaning and preparation steps that may be needed before performing a linear regression analysis. Here are some examples using the tidyverse R library:
 
 1.  Removing missing values: If there are missing values in the dataset, they should be removed or imputed before performing the linear regression analysis. For example, to remove all rows with missing values in the DF dataset:
-```
+```R
 library(dplyr)
 DF_cleaned <- DF %>%
   drop_na()
 ```
 2.  Handling outliers: Outliers can significantly affect the results of a linear regression analysis. Depending on the situation, outliers may need to be removed or transformed. For example, to remove all rows with values outside of the range of the 1st and 99th percentiles of the HR_metric_1 column in the DF dataset:
-```
+```R
 DF_cleaned <- DF %>%
   filter(HR_metric_1 >= quantile(HR_metric_1, 0.01) & HR_metric_1 <= quantile(HR_metric_1, 0.99))
 ```
 3.  Scaling and centering: Sometimes it is necessary to scale or center the data to make it more suitable for linear regression analysis. For example, to scale and center the HR_metric_1 column in the DF dataset:
-```
+```R
 DF_scaled <- DF %>%
   mutate(HR_metric_1_scaled = scale(HR_metric_1, center = TRUE, scale = TRUE))
 
 ```
 4.  Handling categorical variables: If there are categorical variables in the dataset, they will need to be converted into dummy variables before performing the linear regression analysis. For example, to create dummy variables for the product_group column in the DF dataset:
-```
+```R
 DF_dummies <- DF %>%
   mutate(product_group = as.factor(product_group)) %>%
   mutate(across(product_group, ~ as.integer(.))) %>%
@@ -719,7 +721,7 @@ It may be necessary to scale or center data for linear regression when the varia
 In the context of HR metrics and mining productivity, we can consider the example of two variables: "Number of employees" and "Average salary". The number of employees is likely to be an order of magnitude larger than the average salary, and therefore may have a greater impact on the model coefficients. Scaling or centering the variables would make the impact of each variable more comparable.
 
 To scale or center the variables in R, we can use the `scale()` function from the base R library or the `scale_*()` functions from the `dplyr` package of the tidyverse library. Here's an example using `scale()`:
-```
+```R
 # load tidyverse library
 library(tidyverse)
 
@@ -805,7 +807,7 @@ There are several other things that should be considered when conducting a multi
 how to identify and remove outliers from a multiple linear regression model? show the necessary R code.
 ## Reply
 There are several methods for identifying and removing outliers from a multiple linear regression model. Here's an example of how to use the `outlierTest()` function from the `car` package in R to identify outliers and the `subset()` function to remove them:
-```
+```R
 # Load required packages
 library(car)
 
@@ -829,7 +831,7 @@ It's important to note that outlier removal should be done with caution, as it c
 can you put all of this together in R code? Create the best linear multiple regression model for mining productivity metrics using HR metrics and others discussed
 ## Reply
 Sure, here is an example R code for creating a multiple linear regression model for mining productivity metrics using HR metrics and others:
-```
+```R
 library(tidyverse)
 
 # Load the dataset
@@ -873,7 +875,7 @@ mining_data$HR_metric_2 <- scale(mining_data$HR_metric_2
 go on
 ## Reply
 Sure, here's an example R code for creating a multiple linear regression model for mining productivity metrics using HR metrics and other variables:
-```
+```R
 # Load necessary libraries
 library(tidyverse)
 library(lmtest)
@@ -922,7 +924,7 @@ This code first loads the necessary libraries and reads in the data. It then cle
 go on, Give R code for our problem without scaling and using regsubsets() from the leaps package.
 ## Reply
 Sure, here is an example of fitting a linear regression model without scaling and using `regsubsets()` from the `leaps` package:
-```
+```R
 library(leaps)
 
 # Fit a linear regression model using regsubsets()
@@ -945,7 +947,7 @@ This code will fit a linear regression model using all available predictor varia
 Go on, giving a more complete solution
 ## Reply
 Sure, here is a more complete solution using the `lm()` function and the `step()` function for variable selection:
-```
+```R
 # Load required packages
 library(tidyverse)
 library(leaps)
@@ -976,7 +978,7 @@ go on, give a more detailed solution using advanced techniques. the only variabl
 Sure, here is a more detailed solution using advanced techniques:
 
 First, we will load the necessary libraries and read in the data:
-```
+```R
 library(tidyverse)
 library(leaps)
 library(car)
@@ -985,25 +987,25 @@ library(caret)
 data <- read.csv("mining_data.csv")
 ```
 Next, we will prepare the data for analysis. We will convert the `turnover` variable from a decimal percentage to a 0 to 100 scale, and remove any rows with missing data:
-```
+```R
 data$turnover <- data$turnover * 100 # Convert to 0 to 100 scale
 
 data <- na.omit(data) # Remove rows with missing data
 ```
 Now, we will split the data into training and testing sets using the `caret` library:
-```
+```R
 set.seed(1234)
 trainIndex <- createDataPartition(data$prod, p = 0.8, list = FALSE)
 train <- data[trainIndex, ]
 test <- data[-trainIndex, ]
 ```
 We will now perform feature selection using the `regsubsets()` function from the `leaps` library. We will specify the response variable as `prod` and all other variables as predictors. We will use the Bayesian Information Criterion (BIC) to choose the best subset of predictors:
-```
+```R
 predictors <- names(train)[-5] # Exclude prod variable
 model_list <- regsubsets(prod ~ ., data = train[, c("prod", predictors)], nvmax = length(predictors), method = "exhaustive", criterion = "bic")
 ```
 We will now determine the best subset of predictors and fit a linear regression model using the `lm()` function. We will also evaluate the model using the test set:
-```
+```R
 best_model <- which.min(model_list$bic)
 predictors <- names(train)[-5][c(model_list$which[best_model, ])]
 formula <- paste("prod ~", paste(predictors, collapse = " + "))
@@ -1018,7 +1020,7 @@ cat("RMSE:", RMSE, "\n")
 cat("R-squared:", R2, "\n")
 ```
 Finally, we will assess the model assumptions, including checking for linearity, normality, and homoscedasticity using diagnostic plots and statistical tests:
-```
+```R
 # Linearity
 plot(model, which = 1)
 
@@ -1030,7 +1032,7 @@ spreadLevelPlot(model)
 ```
 
 We will also check for outliers using the `outlierTest()` function from the `car` library and remove any influential observations:
-```
+```R
 outliers <- outlierTest(model)$"Bonf(p)"
 train <- train[-outliers, ]
 ```
@@ -1041,7 +1043,7 @@ And that's a more detailed solution using advanced techniques for our multiple l
 great! give another solution with less verbose and more advanced code
 ## Reply
 Sure, here's a more concise solution using the `broom` and `tidyverse` packages for data manipulation and visualization:
-```
+```R
 library(tidyverse)
 library(broom)
 library(leaps)
@@ -1080,7 +1082,7 @@ Note that we first convert `turnover` to a 0-100 scale before fitting the models
 go on, with more advanced techniques
 ## Reply
 Sure, here's another solution using the `caret` package for data pre-processing, `glmnet` package for regularization and cross-validation, and the `broom` package for tidying model results:
-```
+```R
 library(caret)
 library(glmnet)
 library(broom)

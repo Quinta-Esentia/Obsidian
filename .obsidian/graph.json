@@ -15,30 +15,51 @@
       }
     },
     {
-      "query": "tag:#riotinto",
+      "query": "file:\"Project List\"",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "file:\"To Do\"",
+      "color": {
+        "a": 1,
+        "rgb": 16774912
+      }
+    },
+    {
+      "query": "path:\"HRDS Projects\"",
+      "color": {
+        "a": 1,
+        "rgb": 16449791
+      }
+    },
+    {
+      "query": "path:\"Utility Tips\"",
+      "color": {
+        "a": 1,
+        "rgb": 2388055
       }
     },
     {
       "query": "",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 5419488
       }
     }
   ],
   "collapse-display": false,
   "showArrow": true,
-  "textFadeMultiplier": -0.5,
-  "nodeSizeMultiplier": 2.18564102564103,
-  "lineSizeMultiplier": 4.19589743589744,
+  "textFadeMultiplier": -1.5,
+  "nodeSizeMultiplier": 1.65166666666667,
+  "lineSizeMultiplier": 5,
   "collapse-forces": false,
-  "centerStrength": 0.708333333333333,
-  "repelStrength": 19.5,
-  "linkStrength": 1,
-  "linkDistance": 183,
-  "scale": 0.6208539379023998,
+  "centerStrength": 0.441666666666667,
+  "repelStrength": 12.9166666666667,
+  "linkStrength": 0.85,
+  "linkDistance": 173,
+  "scale": 0.5295782886463674,
   "close": false
 }

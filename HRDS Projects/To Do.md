@@ -26,5 +26,5 @@
 
 
 # Personal
-[[My favourite band#I should play more guitar|Play guitar]]
+[[Not-work-stuff#I should play more guitar|Play guitar]]
 

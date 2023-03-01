@@ -1,4 +1,5 @@
-
+[[Linear Regression Ideas]]
+[[APR Insights]]
 
 ![[Entity Map.png]]
 
