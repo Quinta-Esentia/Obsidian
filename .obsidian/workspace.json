@@ -96,6 +96,18 @@
             }
           },
           {
+            "id": "8c3cd1ed48768c0b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HRDS Projects/APR/Linear Regression Ideas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "064418bba2b850d5",
             "type": "leaf",
             "state": {
@@ -108,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -203,8 +215,9 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "684a241987ebd2eb",
+  "active": "8c3cd1ed48768c0b",
   "lastOpenFiles": [
+    "HRDS Projects/APR/APR Insights.md",
     "Utility Tips/Learning Obsidian/Obsidian Tutorial.md",
     "Data Science/Sagemaker and Jupyter Lab.md",
     "Data Science/Data Science.md",
@@ -223,7 +236,6 @@
     "Utility Tips/Outlook.md",
     "HRDS Projects/Project Mind Map.canvas",
     "HRDS Projects/APR/Population Split.md",
-    "HRDS Projects/APR/APR Insights.md",
     "HRDS Projects/APR/Linear Regression Ideas.md",
     "Utility Tips/git cheatsheet.md",
     "Data Science/fastAI/fast.ai setup.md",
