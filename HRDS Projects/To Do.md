@@ -1,9 +1,9 @@
 
 # Emails 
 ([[Outlook]])
-- [ ] ERT context docs (Amanda)
-- [ ] ERT status (Daniel Pyke and Amanda) 
-- [ ] ERT privacy guiderails (Data privacy team, Kirsten, Daniel Pyke)  
+- [x] ERT context docs (Amanda)
+- [x] ERT status (Daniel Pyke and Amanda) 
+- [x] ERT privacy guiderails (Data privacy team, Kirsten, Daniel Pyke)  
 - [ ] ERT People survey data extract (Donna, Dan, Amanda, DanielW/Joe)
 - [ ] Gender Diversity (REPLY to Bill Lovell)
 - [x] Gender Diversity (REPLY to Shane)
