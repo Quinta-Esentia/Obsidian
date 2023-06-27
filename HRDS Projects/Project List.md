@@ -1,9 +1,17 @@
+- [[APR Insights]]
+- [[ERT]]
+- [[Gender Diversity Turnover Analysis]]
+- [[Attrition Survival Analysis]]
+- [[ERT Survey Comments]]
 
-[[APR Insights]]
+# Ad Hoc Projects
+- [[Ad Hoc Projects]]
 
-[[ERT]]
 
-[[Gender Diversity Turnover Analysis]]
+Projects to align with [[HR Data Scientist Objectives]]
 
-[[Attrition Survival Analysis]]
 
+#Data-Science #HR-metrics 
+#APR #insights #analysis
+#ERT #gender #diversity #turnover #attrition #Survival-Analysis #people-survey 
+#projects #objectives

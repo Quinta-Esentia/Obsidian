@@ -1,19 +1,12 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
-  "showAttachments": false,
+  "showAttachments": true,
   "hideUnresolved": false,
-  "showOrphans": true,
+  "showOrphans": false,
   "collapse-color-groups": false,
   "colorGroups": [
-    {
-      "query": "path:\"Data Science\"",
-      "color": {
-        "a": 1,
-        "rgb": 34075
-      }
-    },
     {
       "query": "file:\"Project List\"",
       "color": {
@@ -36,17 +29,31 @@
       }
     },
     {
-      "query": "path:\"Utility Tips\"",
+      "query": "file:\"Data Science\"",
       "color": {
         "a": 1,
-        "rgb": 2388055
+        "rgb": 16711680
       }
     },
     {
-      "query": "",
+      "query": "path:\"Data Science\"",
       "color": {
         "a": 1,
-        "rgb": 5419488
+        "rgb": 4868095
+      }
+    },
+    {
+      "query": "file:\"Utility Tips\"",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:\"Utility Tips\"",
+      "color": {
+        "a": 1,
+        "rgb": 15503676
       }
     }
   ],
@@ -60,6 +67,6 @@
   "repelStrength": 12.9166666666667,
   "linkStrength": 0.85,
   "linkDistance": 173,
-  "scale": 0.5295782886463674,
+  "scale": 0.34965970272166264,
   "close": false
 }

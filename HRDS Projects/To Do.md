@@ -1,4 +1,5 @@
-
+- [ ] Performance 6, 2 developmental and 1 to stop
+- [ ] [[HR Data Scientist Objectives]]
 # Emails 
 ([[Outlook]])
 - [x] ERT context docs (Amanda)
@@ -20,7 +21,8 @@
 - [ ] 
 
 
-
+# Other
+- [ ] Update [[Business as Usual]] stuff
 
 # Qualifications & Trainings
 

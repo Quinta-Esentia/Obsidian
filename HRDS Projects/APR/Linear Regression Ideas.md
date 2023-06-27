@@ -1,3 +1,4 @@
+#Data-Science #linear-regression #Models #APR #HR-metrics 
 # Question 1: Intro
 ## Prompt
 I am doing a multiple linear regression analysis on mining productivity metrics (copper tonne equivalents) each year (from 2016 to 2022) using a variety of HR (human resources) data and metrics. There are different product groups in this organisation such as iron, copper, and aluminium; is it better to make one regression model including all these product groups and having a model term to represent product group, or is it preferable to make a separate regression model for each product group?

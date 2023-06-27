@@ -111,3 +111,17 @@ To change the default startup directory of Git Bash, do the following steps:
 3.  Remove `--cd-to-home` from the `Target` field if it exists
 
 old directory: `%HOMEDRIVE%%HOMEPATH%`
+
+# Discard ALL local changes and pull
+[Link](https://stackoverflow.com/questions/13781388/git-discard-all-changes-and-pull-from-upstream)
+
+There are (at least) two things you can do here–you can reclone the remote repo, or you can `reset --hard` to the common ancestor and then do a pull, which will fast-forward to the latest commit on the remote master.
+
+To be concrete, here's a simple extension of Nevik Rehnel's original answer:
+
+```
+git reset --hard origin/master
+git pull origin master
+```
+
+**NOTE**: using `git reset --hard` will discard any uncommitted changes, and it can be easy to confuse yourself with this command if you're new to git, so make sure you have a sense of what it is going to do before proceeding.

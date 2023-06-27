@@ -5,6 +5,10 @@
 
 [[Linear Regression Ideas]]
 
+[[Survival Analysis]]
+
+[[Linear Regression Ideas]]
+
 ## Coding
 
 [[pySpark]]
@@ -22,3 +26,23 @@
 [[Databricks]]
 
 [[git cheatsheet]]
+
+[[Hugging-Face]]
+
+
+
+
+#Models #Methods #Stats
+#Data-Science #Survival-Analysis 
+#Linear-Regression
+#Coding
+#pySpark
+#SparklyR
+#Platforms
+#fast-ai 
+#sagemaker
+#jupyter-lab
+#databricks
+#git
+#hugging-face
+
