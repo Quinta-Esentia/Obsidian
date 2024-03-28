@@ -4,43 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "edabf54ebb833612",
+        "id": "74e6bed56ccacda9",
         "type": "tabs",
         "children": [
           {
-            "id": "684a241987ebd2eb",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "6f61c553961ece7a",
+            "id": "cf868fe933d07bd8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HRDS Projects/APR/APR Insights.md",
+                "file": "Utility Tips/git cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7e1eb4ea27cc1a9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HRDS Projects/To Do.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "064418bba2b850d5",
+            "id": "c35cfd89fcacf4fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -80,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#gender-diversity",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -101,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 212.5
+    "width": 466.5
   },
   "right": {
     "id": "5b82cb07f44d68b9",
@@ -117,7 +97,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
+                "file": "Utility Tips/git cheatsheet.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -132,11 +113,25 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Utility Tips/git cheatsheet.md"
+              }
+            }
+          },
+          {
+            "id": "35ed5e7d8cec93cf",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -151,41 +146,53 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "684a241987ebd2eb",
+  "active": "cf868fe933d07bd8",
   "lastOpenFiles": [
-    "HRDS Projects/To Do.md",
-    "HRDS Projects/Business as Usual.md",
-    "HRDS Projects/APR/Population Split.md",
-    "HRDS Projects/APR/APR Insights.md",
-    "HRDS Projects/ad hoc/Turnover Analysis.md",
-    "HRDS Projects/APR/Linear Regression Ideas.md",
-    "HRDS Projects/Project List.md",
-    "Data Science/Data Science.md",
-    "Everyday_Respect_Report.pdf",
-    "ERT_Survey_Comments.pdf",
-    "HRDS Projects/ERT/ERT Survey Comments.md",
-    "HRDS Projects/ERT/Elizabeth Broderick Report.md",
-    "HRDS Projects/Gender Diversity Turnover Analysis.md",
-    "Data Science/R/SparklyR.md",
-    "HRDS Projects/ad hoc/Ad Hoc Projects.md",
-    "HRDS Projects/ad hoc/Bauxite Operation Centre - People Scorecard Results.md",
-    "HRDS Projects/ad hoc/BCG Population Sample.md",
-    "HRDS Projects/Attrition Survival Analysis.md",
-    "Data Science/Survival Analysis/Survival Analysis.md",
-    "HRDS Projects/HR Data Scientist Objectives.md",
-    "HRDS Projects/ad hoc",
-    "Utility Tips/Learn.md",
-    "Data Science/Databricks.md",
-    "README.md",
-    "Data Science/huggingface/Hugging-Face.md",
-    "Data Science/huggingface/terminal output.md",
+    "Data Science/R/Functional Programming in R.md",
+    "se-annotations.svg.md",
     "Untitled.md",
-    "Data Science/huggingface/set up.md",
-    "Utility Tips/Terminal.md",
-    "Entity Map.png",
-    "Data Science/huggingface",
+    "HRDS Projects/Data Management/Data Management.md",
+    "HRDS Projects/Data Management/HR Data Quality.md",
+    "HRDS Projects/Data Management/HR Data Field Quality.md",
+    "HRDS Projects/Project List/ad hoc/Ad Hoc Projects.md",
+    "HRDS Projects/APR/APR Notes.md",
+    "HRDS Projects/To Do.md",
+    "HRDS Projects/Project List/ad hoc/Turnover Analysis.md",
+    "Data Science/LLMs/Databricks Data + AI Summit.md",
+    "Data Science/Databricks.md",
+    "Data Science/Sagemaker and Jupyter Lab.md",
+    "HRDS Projects/Gender Diversity Turnover Analysis.md",
+    "HRDS Projects/APR/APR Insights.md",
+    "HRDS Projects/Attrition/Attrition Survival Analysis.md",
+    "HRDS Projects/Contacts and SMEs.md",
+    "Data Science/huggingface/terminal output.md",
+    "Utility Tips/Utility Tips.md",
+    "Data Science/Python/python.md",
+    "HRDS Projects/HR Data Scientist Objectives.md",
+    "HRDS Projects/Project List/Project List.md",
+    "HRDS Projects/Project List/ad hoc/Recruitment Structural Barriers.md",
+    "HRDS Projects/Project List/ad hoc/Gender Modelling.md",
+    "HRDS Projects/Project List/ad hoc/BCG Population Sample.md",
+    "HRDS Projects/Project List",
+    "Data Science/Data Visualization.md",
+    "HRDS Projects/People Survey/Survey Hypothesis.md - Shortcut.lnk",
     "Untitled.canvas",
+    "APR Regression Models.html",
+    "APR Insights and Interpretation.html",
+    "APR-Insights.pdf",
+    "RTIO_Mapping_Ethnicity.csv",
+    "Indigenous Pay Gap Report SOW.docx",
+    "HRDS Projects/People Survey",
     "HRDS Projects/Project Mind Map.canvas",
-    "HRDS Projects/APR"
+    "HRDS Projects/Data Management",
+    "sine_illusion_workaround.svg",
+    "se-annotations.svg",
+    "hypotheses 1.png",
+    "hypotheses.png",
+    "Untitled 1.canvas",
+    "Untitled 2.canvas",
+    "Untitled 3.canvas",
+    "Data Science/LLMs",
+    "Entity Map.png"
   ]
 }

@@ -1,5 +1,8 @@
 [[Linear Regression Ideas]]
 
+[[APR 2022]]
+[[APR 2023]]
+
 The statistical interpretation for a multiple linear regression coefficient (B) for variable (X) is: 
 	_an increase in X by one unit is associated with an increase in Y of B when all other variables in the model are held constant._
 
@@ -35,4 +38,5 @@ Interpret the combination of these three with the model summary output to get a 
 2. Example predictions using a reasonable range of feature values to give a more concrete example of how the model relates CuEq to the HR metrics. 
 
 
-
+# Business interpretation of insights
+[[Contacts and SMEs]]

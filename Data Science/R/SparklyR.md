@@ -13,3 +13,4 @@ Troubleshooting error: `Error: org.apache.spark.SparkException: Missing Credenti
 
 `dfs <- spark_read_csv(sc, path = 's3://hrds-projects/data-catalog/special-projects/APR/APR_CuEq_V6_4.csv', header = TRUE, infer_schema = TRUE, escape =  "\"")`
 
+#coding

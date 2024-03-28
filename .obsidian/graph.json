@@ -2,71 +2,64 @@
   "collapse-filter": false,
   "search": "",
   "showTags": false,
-  "showAttachments": true,
+  "showAttachments": false,
   "hideUnresolved": false,
-  "showOrphans": false,
+  "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "file:\"Project List\"",
+      "query": "file:\"Data Science\"",
       "color": {
         "a": 1,
-        "rgb": 16711680
+        "rgb": 16418048
       }
     },
     {
       "query": "file:\"To Do\"",
       "color": {
         "a": 1,
-        "rgb": 16774912
+        "rgb": 16769577
       }
     },
     {
-      "query": "path:\"HRDS Projects\"",
+      "query": "file:\"Project\"",
       "color": {
         "a": 1,
-        "rgb": 16449791
+        "rgb": 14048460
       }
     },
     {
-      "query": "file:\"Data Science\"",
+      "query": "path:\"Data Science\"  ",
       "color": {
         "a": 1,
-        "rgb": 16711680
+        "rgb": 16723502
       }
     },
     {
-      "query": "path:\"Data Science\"",
+      "query": "path:\"HRDS Projects\"  ",
       "color": {
         "a": 1,
-        "rgb": 4868095
+        "rgb": 2776859
       }
     },
     {
-      "query": "file:\"Utility Tips\"",
+      "query": "",
       "color": {
         "a": 1,
-        "rgb": 16711680
-      }
-    },
-    {
-      "query": "path:\"Utility Tips\"",
-      "color": {
-        "a": 1,
-        "rgb": 15503676
+        "rgb": 6073814
       }
     }
   ],
   "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": -1.5,
-  "nodeSizeMultiplier": 1.65166666666667,
-  "lineSizeMultiplier": 5,
+  "showArrow": false,
+  "textFadeMultiplier": 0.2,
+  "nodeSizeMultiplier": 1.42708333333333,
+  "lineSizeMultiplier": 2.34583333333333,
   "collapse-forces": false,
-  "centerStrength": 0.441666666666667,
-  "repelStrength": 12.9166666666667,
-  "linkStrength": 0.85,
-  "linkDistance": 173,
-  "scale": 0.34965970272166264,
+  "centerStrength": 0.458333333333333,
+  "repelStrength": 9.375,
+  "linkStrength": 0.802083333333333,
+  "linkDistance": 30,
+  "scale": 1.0484782134737263,
   "close": false
 }

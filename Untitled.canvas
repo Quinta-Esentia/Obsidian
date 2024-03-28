@@ -1,1 +1,14 @@
-{}
+{
+	"nodes":[
+		{"id":"3f90e9df719c414f","x":-400,"y":-309,"width":400,"height":400,"type":"file","file":"Data Science/Databricks.md"},
+		{"id":"66aec2cd7ef560a7","x":434,"y":-261,"width":400,"height":400,"type":"file","file":"HRDS Projects/Project List/ad hoc/Bauxite Operation Centre - People Scorecard Results.md"},
+		{"id":"94f75eec17e1ba4c","x":15,"y":224,"width":400,"height":400,"type":"file","file":"HRDS Projects/Project List/ad hoc/Indigenous Pay Gap.md"},
+		{"id":"e2c88e28611d2e5e","type":"file","file":"Data Science/Databricks.md","x":-3680,"y":-3200,"width":400,"height":400},
+		{"id":"903c63012984d34d","type":"file","file":"HRDS Projects/Project List/ad hoc/Bauxite Operation Centre - People Scorecard Results.md","x":-2846,"y":-3152,"width":400,"height":400},
+		{"id":"a3e443a8b5f4ca29","type":"file","file":"HRDS Projects/Project List/ad hoc/Indigenous Pay Gap.md","x":-3265,"y":-2667,"width":400,"height":400},
+		{"id":"7ee8189f03ccb841","type":"file","file":"Data Science/Databricks.md","x":-200,"y":-1800,"width":400,"height":400},
+		{"id":"b0865d3361407f52","type":"file","file":"HRDS Projects/Project List/ad hoc/Bauxite Operation Centre - People Scorecard Results.md","x":634,"y":-1752,"width":400,"height":400},
+		{"id":"18221a2919116d81","type":"file","file":"HRDS Projects/Project List/ad hoc/Indigenous Pay Gap.md","x":215,"y":-1267,"width":400,"height":400}
+	],
+	"edges":[]
+}

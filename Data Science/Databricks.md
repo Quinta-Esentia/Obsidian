@@ -15,7 +15,7 @@ To upload data:
 4. Completion page includes code examples to load this data.
 
 ## Read csv files from DBFS
-
+[[pySpark]] [[SparklyR]] [[python]] [[R]]
 ### Spark:
 ```Spark
 df1 = spark.read.format("csv").option("header", "true").load("dbfs:/FileStore/data/APR_CuEq_V6_4.csv")
@@ -49,3 +49,7 @@ Write Table
 ```python
 spark_df_filtered.write.saveAsTable("dexter_db_test.demo_HRsmall")
 ```
+
+
+# Events
+[[Databricks Data + AI Summit]]
